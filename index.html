@@ -1,5 +1,17 @@
-<center>
+<<center>
 <head>
+  <!DOCTYPE html>
+  <html>
+    <style>
+      /* Define a style for the code block */
+      .code-block {
+        font-family: monospace;
+        white-space: pre;
+        overflow-x: auto;
+        background-color: #f8f8f8;
+        padding: 10px;
+      }
+    </style>
   <h1>BEST ADVICE</h1>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="favicon.ico?v=2">
@@ -11,6 +23,27 @@
   </center>
   <hr>
   <center>
+    <h1>Atasözü</h1>
+    <p id="atasozu">Kan sudan kalındır.</p>
+    <script>
+      // Günlük atasözlerini tutan bir dizi
+      const atasozleri = ["Bir kuşak atının iki yüzü yoktur.", "İşinizi layıkıyla yapın.", "Bir gününüzü kaybetmeyin.", "İkisi bir arada kırk beş yıl dostluk eder.", ];
+
+      // Gün sayacı
+      let gun_sayaci = 0;
+
+      setInterval(() => {
+        // Gün sayacını bir arttır
+        gun_sayaci += 1;
+
+        // Gün sayacını kullanarak günlük atasözünü seç
+        const gunluk_atasozu = atasozleri[gun_sayaci % atasozleri.length];
+
+        // Günlük atasözünü göster
+        document.getElementById("atasozu").innerHTML = gunluk_atasozu;
+      }, 86400);
+    </script>
+    <hr>
     <table>
       <thead>
         <tr>
