@@ -1,9 +1,190 @@
-body{background-color: #439A97;
+/* Genel Stil Ayarları */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-hr{border-style: none;
-border-top-style: dotted;
-border-color: grey;
-border-width: 4px;
-;}
-h1{color: #E83A14;}
-h3{color:#E83A14; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Bölümü */
+.hero {
+  background: url('hero.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 60px 0;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero .cta-button {
+  background-color: #e67e22;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+  background-color: #d35400;
+}
+
+/* Hakkımızda Bölümü */
+.about {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Araçlar Bölümü */
+.cars {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+}
+
+.cars h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.car-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.car {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.car img {
+  width: 100%;
+  height: auto;
+}
+
+.car h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.car p {
+  font-size: 1.2rem;
+  color: #e67e22;
+}
+
+.car .cta-button {
+  background-color: #e67e22;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.car .cta-button:hover {
+  background-color: #d35400;
+}
+
+/* İletişim Bölümü */
+.contact {
+  background-color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #e67e22;
+  padding: 10px 20px;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact button:hover {
+  background-color: #d35400;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
